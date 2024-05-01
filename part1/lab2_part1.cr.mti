@@ -1,0 +1,36 @@
+C:/Users/Lazer/Desktop/sp24-cse140L-lab2/part1/lcd_int3.sv {1 {vlog -work work -sv -stats=none C:/Users/Lazer/Desktop/sp24-cse140L-lab2/part1/lcd_int3.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lcd_int
+
+Top level modules:
+	lcd_int
+
+} {} {}} C:/Users/Lazer/Desktop/sp24-cse140L-lab2/part1/alarm.sv {1 {vlog -work work -sv -stats=none C:/Users/Lazer/Desktop/sp24-cse140L-lab2/part1/alarm.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module alarm
+
+Top level modules:
+	alarm
+
+} {} {}} C:/Users/Lazer/Desktop/sp24-cse140L-lab2/part1/lab2_part1_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/Lazer/Desktop/sp24-cse140L-lab2/part1/lab2_part1_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package lab2_part1_tb_sv_unit
+-- Compiling module lab2__part1_tb
+
+Top level modules:
+	lab2__part1_tb
+
+} {} {}} C:/Users/Lazer/Desktop/sp24-cse140L-lab2/part1/display_tb_part1.sv {1 {vlog -work work -sv -stats=none C:/Users/Lazer/Desktop/sp24-cse140L-lab2/part1/display_tb_part1.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/Lazer/Desktop/sp24-cse140L-lab2/part1/ct_mod_N.sv {1 {vlog -work work -sv -stats=none C:/Users/Lazer/Desktop/sp24-cse140L-lab2/part1/ct_mod_N.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ct_mod_N
+
+Top level modules:
+	ct_mod_N
+
+} {} {}}

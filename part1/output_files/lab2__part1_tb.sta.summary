@@ -1,0 +1,185 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Pulse'
+Slack : -2.990
+TNS   : -20.723
+
+Type  : Slow 1200mV 85C Model Setup 'ct_mod_N:Sct|ct_out[0]'
+Slack : -1.971
+TNS   : -13.758
+
+Type  : Slow 1200mV 85C Model Setup 'Minadv'
+Slack : -1.630
+TNS   : -11.410
+
+Type  : Slow 1200mV 85C Model Setup 'Hrsadv'
+Slack : -1.588
+TNS   : -11.116
+
+Type  : Slow 1200mV 85C Model Setup 'ct_mod_N:Mct|ct_out[0]'
+Slack : -1.581
+TNS   : -11.067
+
+Type  : Slow 1200mV 85C Model Hold 'Hrsadv'
+Slack : 0.471
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Minadv'
+Slack : 0.472
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ct_mod_N:Sct|ct_out[0]'
+Slack : 0.532
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Pulse'
+Slack : 0.710
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ct_mod_N:Mct|ct_out[0]'
+Slack : 0.710
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Hrsadv'
+Slack : -3.000
+TNS   : -13.409
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Minadv'
+Slack : -3.000
+TNS   : -13.409
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Pulse'
+Slack : -3.000
+TNS   : -13.409
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ct_mod_N:Mct|ct_out[0]'
+Slack : -1.487
+TNS   : -10.409
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ct_mod_N:Sct|ct_out[0]'
+Slack : -1.487
+TNS   : -10.409
+
+Type  : Slow 1200mV 0C Model Setup 'Pulse'
+Slack : -2.715
+TNS   : -18.804
+
+Type  : Slow 1200mV 0C Model Setup 'ct_mod_N:Sct|ct_out[0]'
+Slack : -1.816
+TNS   : -12.700
+
+Type  : Slow 1200mV 0C Model Setup 'Minadv'
+Slack : -1.482
+TNS   : -10.374
+
+Type  : Slow 1200mV 0C Model Setup 'Hrsadv'
+Slack : -1.389
+TNS   : -9.723
+
+Type  : Slow 1200mV 0C Model Setup 'ct_mod_N:Mct|ct_out[0]'
+Slack : -1.376
+TNS   : -9.632
+
+Type  : Slow 1200mV 0C Model Hold 'Hrsadv'
+Slack : 0.444
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Minadv'
+Slack : 0.446
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'ct_mod_N:Sct|ct_out[0]'
+Slack : 0.498
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'ct_mod_N:Mct|ct_out[0]'
+Slack : 0.647
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Pulse'
+Slack : 0.649
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Hrsadv'
+Slack : -3.000
+TNS   : -13.409
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Minadv'
+Slack : -3.000
+TNS   : -13.409
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Pulse'
+Slack : -3.000
+TNS   : -13.409
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ct_mod_N:Mct|ct_out[0]'
+Slack : -1.487
+TNS   : -10.409
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ct_mod_N:Sct|ct_out[0]'
+Slack : -1.487
+TNS   : -10.409
+
+Type  : Fast 1200mV 0C Model Setup 'Pulse'
+Slack : -1.104
+TNS   : -6.133
+
+Type  : Fast 1200mV 0C Model Setup 'ct_mod_N:Sct|ct_out[0]'
+Slack : -0.553
+TNS   : -2.005
+
+Type  : Fast 1200mV 0C Model Setup 'Minadv'
+Slack : -0.010
+TNS   : -0.070
+
+Type  : Fast 1200mV 0C Model Setup 'Hrsadv'
+Slack : 0.021
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'ct_mod_N:Mct|ct_out[0]'
+Slack : 0.022
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Hrsadv'
+Slack : 0.169
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Minadv'
+Slack : 0.171
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ct_mod_N:Sct|ct_out[0]'
+Slack : 0.184
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ct_mod_N:Mct|ct_out[0]'
+Slack : 0.251
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Pulse'
+Slack : 0.253
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Pulse'
+Slack : -3.000
+TNS   : -10.526
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Minadv'
+Slack : -3.000
+TNS   : -10.217
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Hrsadv'
+Slack : -3.000
+TNS   : -10.203
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ct_mod_N:Mct|ct_out[0]'
+Slack : -1.000
+TNS   : -7.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ct_mod_N:Sct|ct_out[0]'
+Slack : -1.000
+TNS   : -7.000
+
+------------------------------------------------------------
