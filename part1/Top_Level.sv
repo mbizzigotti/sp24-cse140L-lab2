@@ -21,18 +21,16 @@ module Top_Level #(parameter NS=60, NH=24)(
   logic[6:0] Min, Hrs;
   logic S_max, M_max, H_max, 	   // "carry out" from sec -> min, min -> hrs, hrs -> days
         TMen, THen, AMen, AHen;
+  
+  logic buzz;
 
-  logic IncMin, IncHrs;
+  assign TMen = (Timeset && Minadv) ? Pulse : S_max;
+  assign THen = (Timeset && Hrsadv) ? Pulse : (M_max && S_max);
 
-  always_comb begin
-    AMen = Alarmset;
-    AHen = Alarmset;
-  end
+  assign AMen = Alarmset && Minadv;
+  assign AHen = Alarmset && Hrsadv;
 
-  always_ff @(posedge Pulse) begin
-    IncMin <= S_max & ~IncMin;
-    IncHrs <= M_max & ~IncHrs;
-  end
+  assign Buzz = buzz && Alarmon;
 
 // (almost) free-running seconds counter	-- be sure to set modulus inputs on ct_mod_N modules
   ct_mod_N  Sct(
@@ -44,27 +42,27 @@ module Top_Level #(parameter NS=60, NH=24)(
 // minutes counter -- runs at either 1/sec while being set or 1/60sec normally
   ct_mod_N Mct(
 // input ports
-    .clk(IncMin), .rst(Reset), .en(!Timeset), .modulus(7'd60),
+    .clk(Pulse), .rst(Reset), .en(TMen), .modulus(7'd60),
 // output ports
     .ct_out(TMin), .ct_max(M_max));
 
 // hours counter -- runs at either 1/sec or 1/60min
   ct_mod_N  Hct(
 // input ports
-	.clk(IncHrs), .rst(Reset), .en(!Timeset), .modulus(7'd24),
+	.clk(Pulse), .rst(Reset), .en(THen), .modulus(7'd24),
 // output ports
     .ct_out(THrs), .ct_max(H_max));
 
 // alarm set registers -- either hold or advance 1/sec while being set
   ct_mod_N Mreg(
 // input ports
-    .clk(Minadv), .rst(Reset), .en(AMen), .modulus(7'd60),
+    .clk(Pulse), .rst(Reset), .en(AMen), .modulus(7'd60),
 // output ports    
     .ct_out(AMin), .ct_max()  ); 
 
   ct_mod_N  Hreg(
 // input ports
-    .clk(Hrsadv), .rst(Reset), .en(AHen), .modulus(7'd24),
+    .clk(Pulse), .rst(Reset), .en(AHen), .modulus(7'd24),
 // output ports    
     .ct_out(AHrs), .ct_max() ); 
 
@@ -76,24 +74,20 @@ module Top_Level #(parameter NS=60, NH=24)(
 	);
 
   lcd_int Mdisp(
-    .bin_in    (TMin),
+    .bin_in    (Alarmset ? AMin : TMin),
 	.Segment1  (M1disp),
 	.Segment0  (M0disp)
 	);
 
   lcd_int Hdisp(
-    .bin_in    (THrs),
+    .bin_in    (Alarmset ? AHrs : THrs),
 	.Segment1  (H1disp),
 	.Segment0  (H0disp)
 	);
 
-  wire buzzing;
- 
 // buzz off :)	  make the connections
   alarm a1(
-    .tmin(TMin), .amin(AMin), .thrs(THrs), .ahrs(AHrs), .buzz(buzzing)
+    .tmin(TMin), .amin(AMin), .thrs(THrs), .ahrs(AHrs), .buzz
 	);
-
-  assign Buzz = buzzing && Alarmon
 
 endmodule

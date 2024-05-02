@@ -5,11 +5,11 @@ module lab2_2_tb_file #(parameter NS = 60, NH = 24);
   bit   Reset    = 1,
         Timeset     ,
         Alarmset    ,
-		Minadv      ,
-		Hrsadv      ,
+		    Minadv      ,
+		    Hrsadv      ,
         Dayadv      ,
-		Alarmon  = 1,
-		Pulse       ;
+		    Alarmon  = 1,
+		    Pulse       ;
 
   wire[6:0] S1disp, S0disp,
             M1disp, M0disp,
