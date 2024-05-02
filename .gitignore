@@ -1,1 +1,11 @@
+**/db/
+**/incremental_db/
+**/output_files/
+**/simulation/
+**/work/
+**.qpf
+**.qsf
+**.qws
+**.cr.mti
+**.mpf
 **.wlf
