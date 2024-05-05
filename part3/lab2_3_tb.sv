@@ -1,24 +1,24 @@
 // testbench for lab2
 `include "display_2_3_tb.sv"
 module lab2_3_tb();
-  logic Reset = 1,
-        Clk = 0,
-        Timeset = 0,
+  logic Reset    = 1,
+        Clk      = 0,
+        Timeset  = 0,
         Alarmset = 0,
-		Minadv = 0,
-		Hrsadv = 0,
-		Dayadv = 0,
-		Datadv = 0,
-		Monadv = 0,
-		Alarmon = 1,
-		Pulse = 0;
+		    Minadv   = 0,
+		    Hrsadv   = 0,
+		    Dayadv   = 0,
+		    Datadv   = 0,
+		    Monadv   = 0,
+		    Alarmon  = 1,
+		    Pulse    = 0;
 		
   wire[6:0] S1disp, S0disp,
             M1disp, M0disp,
-	        H1disp, H0disp, 
-	        D0disp,
-	        N1disp, N0disp,
-	        T1disp, T0disp;
+	          H1disp, H0disp, 
+	          D0disp,
+	          N1disp, N0disp,
+	          T1disp, T0disp;
   wire Buzz;
 
   Top_Level top(.*); // (.Reset(Reset),....)

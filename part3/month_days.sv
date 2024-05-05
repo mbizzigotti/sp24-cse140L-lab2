@@ -1,6 +1,6 @@
 module month_days(
-    input  [3:0] month,
-    output [4:0] numdays
+    input        [3:0] month,
+    output logic [4:0] numdays
 );
 
 always_comb
@@ -17,6 +17,7 @@ case (month)
      9: numdays = 31; // October - 31 days
     10: numdays = 30; // November - 30 days
     11: numdays = 31; // December - 31 days
+	 default: numdays = 0;
 endcase
 
 endmodule
