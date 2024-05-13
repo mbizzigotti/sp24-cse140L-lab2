@@ -132,13 +132,13 @@ module Top_Level #(parameter NS=60, NH=24)(
   );
 
   lcd_int Ndisp(
-    .bin_in    (TDat),
+    .bin_in    (TMon + 1),
     .Segment1  (N1disp),
     .Segment0  (N0disp)
   );
 
   lcd_int Tdisp(
-    .bin_in    (TMon),
+    .bin_in    (TDat + 1),
     .Segment1  (T1disp),
     .Segment0  (T0disp)
   );
